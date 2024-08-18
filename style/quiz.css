@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaf0f7;
+}
+
+nav {
+    background-color: #fff;
+    /* height: 60px; */
+    display: flex;
+}
+
+nav .title-brand {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(0, 0, 252);
+    cursor: pointer;
+}
+
+.warp-nav {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 8px 0px;
+}
+
+nav .title-ujian {
+    background-color: purple;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.warp-nav2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-profile img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.warp-content {
+    width: 90%;
+    margin: auto;
+}
+
+.rules-content,
+.time-content,
+.questions-content {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.rules-content div {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+.time-content div {
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(37, 73, 151);
+}
+
+.number-content {
+    padding: 0px 10px;
+    display: flex;
+    gap: 2px;
+    /* border: 1px solid red; */
+}
+
+.number {
+    transition: all 0.3s ease;
+    width: 100%;
+    padding: 8px 0px;
+    background-color: #2dc3fc;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.number:hover {
+    /* border: 1px solid rgba(0, 0, 0, 0.4); */
+    background-color: #23b3eb;
+}
+
+.number.satu {
+    background-color: #ff5c77;
+}
+
+.number.red {
+    background-color: #ff5c77;
+}
+
+.number.blue {
+    background-color: #2dc3fc;
+}
+
+.number.black {
+    background-color: black;
+}
+
+.questions-content .title-questions {
+    padding: 0px 20px 10px;
+    font-weight: bolder;
+    color: rgb(37, 73, 151);
+    font-size: 14px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.432);
+}
+
+.startQuiz {
+    border: none;
+    padding: 8px;
+    background-color: #1c9638;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.startQuiz:hover {
+    background-color: #15752c;
+}
+
+.hide {
+    /* color: white; */
+    display: none;
+}
+
+.play {
+    display: none;
+}
+
+.question-text {
+    margin: 10px;
+    color: rgb(49, 49, 150);
+    font-weight: 500;
+}
+
+.options {
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(49, 49, 150);
+}
+
+.button-area {
+    padding: 0px 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.button-area .button {
+    width: 100%;
+    padding: 5px 0px;
+    background-color: #4d79f5;
+    color: #ffffffd4;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+}
+
+.button-area .button:hover {
+    background-color: #1d52e2;
+}
+
+.iconThumb {
+    width: 12px;
+}
+
+/* .button-area .next {
+    pointer-events: none;
+} */
+
+/* .disabled {
+    pointer-events: none;
+    opacity: 1;
+} */
+
+/* .button-area .next.yes {
+    pointer-events: auto;
+} */
+
+.button.partialOpacity {
+    opacity: 0.5;
+}
+
+.exit-content {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.exit-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: rgba(84, 78, 78, 0.03);
+}
+
+.exit-content a .exit {
+    color: goldenrod;
+}
+
+.exit-content img.iconThumb {
+    width: 20px;
+}
+
+.exit-content span {
+    color: rgb(112, 97, 10);
+}
+
+footer {
+    /* border: 1px solid red; */
+    color: #5870a8;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4285f4;
+    padding: 0px 5px;
+}
+
+
+.icon.tick {
+    border-color: green;
+    color: green;
+    background-color: #d4edda;
+}
+
+.option .icon.cross {
+    border-color: red;
+    color: red;
+    background-color: #f8d7da;
+}
+
+.option.correct {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.option.incorrect {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+@media (max-width:500px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    .anounce-bar {
+        font-size: 14px;
+    }
+
+    table tr td input {
+        width: auto;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

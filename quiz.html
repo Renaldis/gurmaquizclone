@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8d57d5ca39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/quiz.css">
+</head>
+
+<body>
+    <nav>
+        <div class="warp-nav">
+            <div class="title-brand">GREEN UNIVERSITY</div>
+            <div class="warp-nav2">
+                <div class="title-ujian">QUIZZ AKHIR 2023/2024</div>
+                <div class="logo-profile">
+                    <a href="index.html"><img src="img/profile.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="warp-content">
+        <section>
+            <article class="rules-content">
+                <!-- <div>
+                    Siswa Hanya Diberikan Sekali Pilihan Saja, Option yang Anda Pilih Menentukan Benar Salah nya.
+                </div> -->
+                <div>
+                    Siswa Harus Menyelesaikan Tiap Soal, Untuk Bisa Ke Soal Selanjutnya
+                </div>
+            </article>
+            <article class="time-content">
+                <div class="time-title hide">
+                    SISA WAKTU
+                </div>
+                <div class="timer-second hide">
+                    DETIK
+                </div>
+                <div>
+                    <button class="startQuiz">MULAI QUIZ</button>
+                </div>
+            </article>
+            <article class="number-content">
+                <button class="number satu">1</button>
+                <button class="number dua">2</button>
+                <button class="number tiga">3</button>
+                <button class="number empat">4</button>
+                <button class="number lima">5</button>
+                <button class="number enam">6</button>
+                <button class="number tujuh">7</button>
+                <button class="number delapan">8</button>
+                <button class="number sembilan">9</button>
+                <button class="number sepuluh">10</button>
+            </article>
+            <article>
+                <div class="questions-content">
+                    <div class="title-questions">
+                        PILIHLAH JAWABAN YANG PALING TEPAT!
+                    </div>
+                    <div class="question-text ">
+                        <span class="hide">Bahasa pemrograman mana yang umumnya digunakan untuk pengembangan aplikasi
+                            Android?</span>
+                    </div>
+                    <div class="options">
+                        <div class="option satu hide">
+                            <input type="radio" name="soalSatu" value="Swift">
+                            <span>
+                                Swift
+                            </span>
+                        </div>
+                        <div class="option dua hide">
+                            <input type="radio" name="soalSatu" value="Java">
+                            <span>
+                                Java
+                            </span>
+                            <!-- <span class="icon tick"><i class="fa-solid fa-check"></i></span> -->
+                        </div>
+                        <div class="option tiga hide">
+                            <input type="radio" name="soalSatu" value="Ruby">
+                            <span>
+                                Ruby
+                            </span>
+                            <!-- <span class="icon cross"><i class="fa-solid fa-xmark"></i></span> -->
+                        </div>
+                        <div class="option empat hide">
+                            <input type="radio" name="soalSatu" value="PHP">
+                            <span>
+                                PHP
+                            </span>
+                        </div>
+                        <div class="option default hide">
+                            <input type="radio" value="null" name="soalSatu" checked>
+                            <span>
+                                Belum dijawab
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="button-area">
+                    <button class="submit button">
+                        <span>SUBMIT</span>
+                        <img src="img/arrow-down.png" alt="" class="iconThumb">
+                    </button>
+                    <button class="next button" disabled>
+                        <span>NEXT QUESTION</span>
+                        <img src="img/right-arrow.png" alt="" class="iconThumb">
+                    </button>
+                </div>
+            </article>
+            <article class="exit-content">
+                <span class="exit-title">Keluar hanya dapat dilakukan jika semua soal telah dijawab.</span>
+                <a href="#" class="exit-button">
+                    <span class="exit hide">exit now</span>
+                    <img src="img/log-out.png" alt="" class="hide iconThumb">
+                </a>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <span>
+            Copyright &copy 2020-2024 <a href="">Green University.</a> All rights reserved.
+        </span>
+    </footer>
+
+    <script src="script/questions.js"></script>
+    <script src="script/quiz.js"></script>
+</body>
+
+</html>

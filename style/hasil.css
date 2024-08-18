@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaf0f7;
+}
+
+nav {
+    background-color: #fff;
+    /* height: 60px; */
+    display: flex;
+}
+
+nav .title-brand {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(0, 0, 252);
+    cursor: pointer;
+}
+
+.warp-nav {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 8px 0px;
+}
+
+nav .title-ujian {
+    background-color: purple;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.warp-nav2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-profile img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.warp-content {
+    min-height: 70vh;
+    width: 90%;
+    margin: auto;
+}
+
+.img-content,
+.status-content,
+.soal-content,
+.score-content,
+.login-content {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+.img-content .pas4x6 {
+    width: 55px;
+    height: 65px;
+    margin-left: 15px;
+}
+
+.status-content {
+    text-align: center;
+    font-weight: 600;
+    color: #144fad;
+    font-size: 14px;
+}
+
+.card-soal {
+    border: 1px solid rgba(128, 128, 128, 0.226);
+    padding: 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.688);
+}
+
+.score-content {
+    text-align: center;
+    color: #144fad;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.score {
+    border: 2px solid gold;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #f8f2f25c;
+}
+
+.login-content .login-bar button {
+    border: none;
+    padding: 15px 15px;
+    border-radius: 8px;
+    color: white;
+    background-color: #4285f4;
+    cursor: pointer;
+}
+
+.login-content .login-bar button:hover {
+    background-color: #144fad;
+}
+
+.login-bar {
+    text-align: center;
+}
+
+footer {
+    /* border: 1px solid red; */
+    color: #5870a8;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #4285f4;
+    padding: 0px 5px;
+}
+
+@media (max-width:500px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    .anounce-bar {
+        font-size: 14px;
+    }
+
+    table tr td input {
+        width: auto;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
